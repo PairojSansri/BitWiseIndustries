@@ -1,0 +1,48 @@
+body {
+background-color: white;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.SEC--1 {
+    background-color: #D8D8D8;
+    color: #4A4A4A;
+    display: flex;
+}
+
+#sidebar {
+    display: block;
+    border: 8px 500px;
+}
+
+.SEC--1 a {
+    color: #fff;
+    background-color: #4A4A4A;
+}
+
+.SEC--2 {
+    display: flex;
+}
+
+#banner {
+    display: block;
+    height: 500px;
+    width: auto;
+    padding: 32px 24px;
+}
+
+span {
+    text-align: right;
+    margin: 16px;
+}
+
+.SEC--1 img {
+    height: 60%;
+    width: auto;
+    display: inline-flex;
+    padding: 0 0;
+    margin: 32px 24px;
+}
+
+.menu--side {
+    display:inline-flex;
+}
