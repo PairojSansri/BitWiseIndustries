@@ -128,6 +128,17 @@ header{
      padding: 3rem 1rem;
  }
 
+ .missionPanel section, .processPanel li {
+    border: 3px solid hsl(83.8,82.8%,57.3%);
+    box-shadow: 3px 3px hsl(83.8,82.8%,57.3%);
+    border-radius: 10px;;
+ }
+
+ .missionPanel section, .processPanel li {
+    margin: 48px 24px;
+}
+ }
+
  .processPanel ul h4 {
     margin: 50px;
  }
@@ -210,8 +221,6 @@ footer ul {
         box-sizing: border-box;
         width: 50%;
         margin: 45px;
-        border: 3px solid hsl(83.8,82.8%,57.3%);
-        border-radius: 10px;
     }
 
     .processPanel ul {
@@ -225,7 +234,6 @@ footer ul {
         width: 33%;
         border: 3px solid hsl(83.8,82.8%,57.3%);
         border-radius: 10px;
-        box-shadow: 3px 3px hsl(83.8,82.8%,57.3%);
         border-radius: 10px;;
         margin: 50px;
     }
