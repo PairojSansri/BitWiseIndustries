@@ -25,7 +25,7 @@ html {
 body {
     background-color: hsl(11.2,85.6%,35.5%);
     color: hsl(83.8,82.8%,57.3%);
-    font-size: clamp(12px, 24px, 48px);
+    font-size: clamp(12px, 18px, 48px);
 }
 
 header{

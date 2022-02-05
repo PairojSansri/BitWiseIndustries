@@ -147,6 +147,7 @@ header{
      display: flex;
      align-self: center;
      margin: 1.5rem;
+     font-size: 24px;
  }
 
  .processPanel h5 {
