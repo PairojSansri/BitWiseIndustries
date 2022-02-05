@@ -18,14 +18,13 @@ Accent: #cff595 hsl(83.8,82.8%,77.3%)
 }
 
 html {
-    font-family: 'Rubik', Georgia, serif;
-    font-size: 14px;
+    font-family: Georgia, serif;
 }
 
 body {
     background-color: hsl(11.2,85.6%,35.5%);
     color: hsl(83.8,82.8%,57.3%);
-    font-size: var(--fs--r);
+    font-size: clamp(12px, 24px, 48px);
 }
 
 header{
@@ -74,7 +73,6 @@ header{
  .navBar i {
     display: inline-flex;
     flex-direction: row;
-    font-size: 2rem;
     color: hsl(83.8,82.8%,87.3%);
  }
 
@@ -87,7 +85,7 @@ header{
  .missionPanel, .processPanel {
      background-color: hsl(11.2,85.6%,25.5%);
      padding: var(--fs--xl);
-     margin: 5rem;
+     margin: 2rem;
      border-radius: 10px;
  }
 
@@ -98,7 +96,7 @@ header{
 
  section h2 {
      display: flex;
-     font-size: var(--fs--xl);
+     margin: 16px;
  }
 
  .processPanel {
@@ -111,7 +109,7 @@ header{
      width: 60%;
  }
 
- section h1, section h4 {
+ section h1, section h5 {
      display: flex;
      justify-content: center;
      text-align: center;
@@ -130,11 +128,11 @@ header{
      padding: 3rem 1rem;
  }
 
- .processPanel li i {
-    text-decoration: none;
+ .processPanel ul h4 {
+    margin: 50px;
  }
 
- .processPanel h4 {
+ .processPanel h5 {
      display: inline-flex;
      margin: var(--fs--xl)
  }
@@ -178,10 +176,6 @@ footer ul {
     html {
         font-size: 16px;
     }
-    
-    body {
-        font-size: var(--fs--r);
-    }
 
     .navBar {
         position: fixed;
@@ -213,7 +207,11 @@ footer ul {
     }
 
     .missionPanel section {
+        box-sizing: border-box;
         width: 50%;
+        margin: 45px;
+        border: 3px solid hsl(83.8,82.8%,57.3%);
+        border-radius: 10px;
     }
 
     .processPanel ul {
@@ -222,12 +220,14 @@ footer ul {
     }
 
     .processPanel li {
+        box-sizing: border-box;
         align-items: baseline;
         width: 33%;
-    }
-
-    .processPanel p {
-        font-size: var(--fs--r);
+        border: 3px solid hsl(83.8,82.8%,57.3%);
+        border-radius: 10px;
+        box-shadow: 3px 3px hsl(83.8,82.8%,57.3%);
+        border-radius: 10px;;
+        margin: 50px;
     }
 
     footer ul {
