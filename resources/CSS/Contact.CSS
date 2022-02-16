@@ -90,3 +90,25 @@ header img {
     transition: 600ms;
     margin: 20px;
 }
+
+@media only and (min-width: 1024px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    footer img {
+        height: 100px;
+        width: auto;
+        border-radius: 100px;
+        padding: 2rem;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style: none;
+    }
+}

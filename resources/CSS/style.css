@@ -22,12 +22,12 @@ html {
 }
 
 body {
-    background-color: hsl(11.2,85.6%,35.5%);
-    color: hsl(83.8,82.8%,57.3%);
+    background-color: hsl(11.2, 85.6%, 35.5%);
+    color: hsl(83.8, 82.8%, 57.3%);
     font-size: clamp(12px, 18px, 48px);
 }
 
-header{
+header {
     background-image: url("../images/Blue\ Modern\ Fire\ Logo\ Vector\ Template.png");
     background-size: contain;
     background-position: center;
@@ -39,7 +39,7 @@ header{
     padding: 20vh;
 }
 
-.container {
+.container .nav {
     display: block;
 }
 
@@ -54,134 +54,60 @@ header{
     display: none;
 }
 
- .navBar ul {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
- }
+.navBar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
- .navBar ul li {
-     display: flex;
-     padding: var(--fs--r);
- }
+.navBar ul li {
+    display: flex;
+    padding: var(--fs--r);
+}
 
- .navBar a {
-     display: inline-flex;
-     text-decoration: none;
- }
+.navBar a {
+    display: inline-flex;
+    text-decoration: none;
+}
 
- .navBar i {
+.navBar i {
     display: inline-flex;
     flex-direction: row;
-    color: hsl(83.8,82.8%,87.3%);
- }
-
- .navBar P {
-     display: none;
-     flex-direction: row;
-    margin: 3rem;
- }
-
- .missionPanel, .processPanel {
-     background-color: hsl(11.2,85.6%,25.5%);
-     padding: var(--fs--xl);
-     margin: 2rem;
-     border-radius: 10px;
- }
-
- .missionPanel section {
-     display: flex;
-     flex-direction: column;
- }
-
- section h2 {
-     display: flex;
-     margin: 16px;
- }
-
- .processPanel {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
- }
-
- .processPanel section {
-     width: 60%;
- }
-
- section h1, section h5 {
-     display: flex;
-     justify-content: center;
-     text-align: center;
- }
-
- .processPanel h1 {
-     margin: var(--fs--xl);
- }
-
- .missionPanel p, 
- .processPanel li {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     padding: 3rem 1rem;
- }
-
- .missionPanel section, .processPanel li {
-    border: 3px solid hsl(83.8,82.8%,57.3%);
-    box-shadow: 3px 3px hsl(83.8,82.8%,57.3%);
-    border-radius: 10px;;
- }
-
- .missionPanel section, .processPanel li {
-    margin: 48px 24px;
+    color: hsl(83.8, 82.8%, 87.3%);
 }
- }
 
- .processPanel ul h4 {
-    margin: 50px;
- }
-
- .processPanel i, .processPanel h4 {
-     display: flex;
-     align-self: center;
-     margin: 1.5rem;
-     font-size: 24px;
- }
-
- .processPanel h5 {
-     display: inline-flex;
-     margin: var(--fs--xl)
- }
-
- .processPanel a {
-     text-decoration: none;
-     color: hsl(83.8,82.8%,87.3%);
- }
-
- .buttonContact {
+.navBar P {
     display: none;
- }
+    flex-direction: row;
+    margin: 3rem;
+}
 
- footer {
+.container.alpha {
+    display: inline-flex;
+}
+
+
+footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
- }
+}
 
 footer img {
-height: 100px;
-width: auto;
-border-radius: 100px;
-padding: 2rem;
+    height: 100px;
+    width: auto;
+    border-radius: 100px;
+    padding: 2rem;
 }
 
 footer ul {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
     list-style: none;
+}
+
+footer li {
+    padding: 5rem;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -216,41 +142,7 @@ footer ul {
 
     .navArrow {
         display: flex;
-        margin-left: 27px;;
-    }
-
-    .missionPanel article {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .missionPanel section {
-        box-sizing: border-box;
-        width: 50%;
-        margin: 45px;
-    }
-
-    .processPanel ul {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .processPanel li {
-        box-sizing: border-box;
-        align-items: baseline;
-        width: 33%;
-        border: 3px solid hsl(83.8,82.8%,57.3%);
-        border-radius: 10px;
-        border-radius: 10px;;
-        margin: 50px;
-    }
-
-    footer ul {
-        display: flex;
-        flex-direction: row;
-    }
-
-    footer li {
-        padding: 5rem;
+        margin-left: 27px;
+        ;
     }
 }
