@@ -29,15 +29,15 @@ body {
 }
 
 header {
-    background-image: url("../images/Blue\ Modern\ Fire\ Logo\ Vector\ Template.png");
+    background-image: url("../images/FirePit.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #000;
+    background-color: hsl(240, 4% , 16%);
     height: max-content;
     width: auto;
     justify-content: space-between;
-    padding: 8vh;
+    padding: 20vh;
 }
 
 .navBar {
@@ -53,7 +53,6 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: hsl(0, 0%, 0%);
 }
 
 .navBar ul li {
@@ -83,9 +82,9 @@ header {
     display: flex;
     flex-direction: column-reverse;
     background-image: linear-gradient(
-        hsla(0, 0%, 0%, 1),
+        hsla(240, 4% , 16%, 1),
         hsla(0, 100%, 90%, 0.7),
-        hsla(240, 4% , 16%, 0.8)),
+        hsla(240, 4% , 16%, 1)),
          url("../images/mobile-hero.jpeg");
         background-repeat: no-repeat;
     background-size: cover;
@@ -162,6 +161,7 @@ section h5 {
     width: 95%;
     height: auto;
     border-radius: 10px;
+    align-self: center;
 }
 
 .missionPanel section,
@@ -208,7 +208,7 @@ section h5 {
     margin: 25px;
     padding: 24px;
     border-radius: 10px;
-    background-color: hsl(46, 65%, 52%);
+    background-color: list-style: none;;
 }
 
 .bio .img-cont {
@@ -220,6 +220,7 @@ section h5 {
     height: auto;
     border-radius: 10px;
     margin:2rem auto;
+    align-self: center;
 }
 
 footer {
@@ -239,7 +240,7 @@ footer img {
 footer ul {
     display: flex;
     flex-direction: row;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     justify-content: space-around;
     list-style: none;
 }
@@ -253,6 +254,23 @@ footer ul {
 
     body {
         font-size: clamp(12px, 24px, 48px);
+        z-index: 3;
+    }
+
+    .underLayer {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: -1;
+        background-image: linear-gradient(
+            hsla(240, 4% , 16%, 1),
+            hsla(0, 100%, 90%, 0.7),
+            hsla(240, 4% , 16%, 0.9)),
+             url(../images/Passion.jpeg);
+        background-repeat: no-repeat;
+        background-size:100vmax;
+        background-position: 50%;
+        border: 5px solid white;;
     }
 
     .navBar {
@@ -272,6 +290,7 @@ footer ul {
     .navBar:hover ul {
         display: flex;
         flex-direction: column;
+        background-color:hsla(0, 100%, 90%, 0.7);
     }
 
     .navArrow {
@@ -288,6 +307,7 @@ footer ul {
     .missionPanel article {
         display: flex;
         flex-direction: row;
+        background-image: none;
     }
 
     .missionPanel section {
@@ -297,23 +317,33 @@ footer ul {
 
     .processPanel ul {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .processPanel li {
         box-sizing: border-box;
         align-items: baseline;
         width: 33%;
-        border: 3px solid hsl(46, 65%, 52%);
+        height: max-content;
         border-radius: 10px;
-        border-radius: 10px;
-        ;
-        margin: 50px;
+        margin: 5rem;
+        justify-content: flex-end;
+        align-content: cente;
+        font-size: 1rem;
+    }
+
+    .processPanel p {
+        width: 80%;
+        align-self: center;
+    }
+
+    .bio p {
+        padding: 1rem 2rem;
     }
 
     footer {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
     }
 
@@ -326,8 +356,9 @@ footer ul {
 
     footer ul {
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
         list-style: none;
+        color: #000;
     }
 }

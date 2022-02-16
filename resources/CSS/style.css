@@ -18,21 +18,21 @@ Accent: #cff595 hsl(83.8,82.8%,77.3%)
 }
 
 html {
-    font-family: Georgia, serif;
+    font-family: 'Poppins', Georgia, serif;
 }
 
 body {
-    background-color: hsl(11.2, 85.6%, 35.5%);
-    color: hsl(83.8, 82.8%, 57.3%);
+    background-color: hsl(240, 4% , 16%);
+    color: hsl(46, 65%, 52%);
     font-size: clamp(12px, 18px, 48px);
 }
 
 header {
-    background-image: url("../images/Blue\ Modern\ Fire\ Logo\ Vector\ Template.png");
+    background-image: url("../images/FirePit.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #000;
+    background-color: hsl(240, 4% , 16%);
     height: max-content;
     width: auto;
     justify-content: space-between;
@@ -58,6 +58,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    list-style: none;
 }
 
 .navBar ul li {
@@ -73,7 +74,7 @@ header {
 .navBar i {
     display: inline-flex;
     flex-direction: row;
-    color: hsl(83.8, 82.8%, 87.3%);
+    color: hsl(46, 65%, 52%);
 }
 
 .navBar P {
@@ -84,8 +85,16 @@ header {
 
 .container.alpha {
     display: inline-flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: 3rem 1rem;
+    margin: 1rem;
+    
 }
 
+.container.alpha ul {
+    list-style: none;
+}
 
 footer {
     display: flex;
