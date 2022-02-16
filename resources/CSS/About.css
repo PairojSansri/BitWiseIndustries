@@ -199,7 +199,7 @@ section h5 {
     display: none;
 }
 
-.container2 {
+.bio {
     display: flex;
     flex-direction: column;
     color: hsl(240, 4% , 16%);
@@ -211,16 +211,15 @@ section h5 {
     background-color: hsl(46, 65%, 52%);
 }
 
-.img-cont {
-    width: 40%S;
-    background-image: url(../images/20201104215546_IMG_3524-2.jpg);
-    background-position: center top 20px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    align-items: baseline;
-    border-radius: 100%;
-    padding: 15%;
-    margin: 25px;
+.bio .img-cont {
+    
+}
+
+.img-cont img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin:2rem auto;
 }
 
 footer {
@@ -231,8 +230,8 @@ footer {
 
 footer img {
     height: auto;
-    width: 75%;
-    border-radius: 100px;
+    width: 70%;
+    border-radius: 50px;
     padding: 2rem;
     align-self: center;
 }
@@ -240,7 +239,7 @@ footer img {
 footer ul {
     display: flex;
     flex-direction: row;
-    font-size: 1.25rem;
+    font-size: 1.7rem;
     justify-content: space-around;
     list-style: none;
 }
@@ -281,7 +280,7 @@ footer ul {
         ;
     }
 
-    .container2 {
+    .bio {
         display: flex;
         flex-direction: row;
     }
