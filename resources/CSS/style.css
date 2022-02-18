@@ -147,7 +147,7 @@ footer img {
 footer ul {
     display: flex;
     flex-direction: row;
-    font-size: 1.5rem;
+    font-size:  var(--fs--r);
     justify-content: space-around;
     list-style: none;
 }

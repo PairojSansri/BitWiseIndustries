@@ -154,6 +154,7 @@ section h5 {
     box-shadow: -1rem 0.5rem 0.5rem hsl(0, 0%, 0%);
     background-color: hsl(240, 4%, 12%);
     border-radius: 10px;
+    justify-content: flex-start;
 }
 
 .processPanel img {
@@ -210,11 +211,6 @@ section h5 {
     background-color: hsl(46, 65%, 52%);
 }
 
-.bio p:last-child:first-letter {
-    color: hsl(46, 65%, 52%);
-    text-shadow: -2px 4px black;
-}
-
 .img-cont img {
     width: 100%;
     height: auto;
@@ -240,28 +236,7 @@ footer img {
 footer ul {
     display: flex;
     flex-direction: row;
-    font-size: 1.5rem;
-    justify-content: space-around;
-    list-style: none;
-}
-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-footer img {
-    height: auto;
-    width: 70%;
-    border-radius: 50px;
-    padding: 2rem;
-    align-self: center;
-}
-
-footer ul {
-    display: flex;
-    flex-direction: row;
-    font-size: 1.5rem;
+    font-size:  var(--fs--r);
     justify-content: space-around;
     list-style: none;
 }
@@ -366,7 +341,13 @@ footer ul {
         margin: 5rem;
         justify-content: flex-end;
         align-content: cente;
-        font-size: var(--fs--l);
+        font-size: var(--fs--);
+    }
+
+    .processPanel img,
+    .processPanel p,
+    .processPanel h4 {
+        margin-bottom: 5rem;
     }
 
     .processPanel p {
